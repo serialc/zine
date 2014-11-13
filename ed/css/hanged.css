@@ -1,0 +1,270 @@
+/** hang CSS
+Cyrille Medard de Chardon
+April 2011 **/
+
+html {
+	font-family: arial;
+	font-size: 1.2em;
+}
+
+body {
+	margin: 0;
+
+}
+/** Main Sections **/
+
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	padding: 5px;
+	overflow: auto;
+}
+
+#hband {
+	border-bottom: 1px solid #aaa;
+	padding: 10px; }
+
+#cband {
+	min-height: 500px;
+	background: white;
+}
+
+#fband {
+	padding: 10px;
+	border-top: 1px solid #aaa;
+	min-height: 100px;
+}
+
+#content {
+	background-color: white;
+	padding: 10px 0;
+}
+
+#footer {
+	font-size: 0.6em;
+	text-align:center;
+	color: #aaa;
+}
+
+	#footer a {
+		text-decoration: none;
+		color: #777;
+	}
+
+/** Sub sections **/
+
+#header img {
+	border: 0;
+}
+
+#statement {
+	padding-top: 30px;
+	display: block;
+	width: 400px;
+	float: right;
+	color: #aaa;
+	text-align: right;
+}
+
+#navigation {
+	padding-top: 5px;
+	display: block;
+	width: 400px;
+	clear: right;
+	float: right;
+	color: #aaa;
+}
+
+#navigation li, #issue_nav  li, input.button {
+	border: 1px solid #999;
+	color: black;
+	margin-left: 5px;
+	padding: 3px;
+	width: 150px;
+	float: right;
+	text-align: center;
+	background: -moz-linear-gradient(top, #aaa, #bbb);
+	background: -ms-linear-gradient(top, #aaa, #bbb);
+	background: -o-linear-gradient(top, #aaa, #bbb);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#aaa), to(#bbb));
+	background: -webkit-linear-gradient(top, #aaa, #bbb);
+	background: linear-gradient(top, #aaa, #bbb)
+}
+
+#issue_nav  li {
+	margin: 0 3px 3px 0;
+	width: 35px;
+	float: left;
+}
+
+#navigation li:hover, #issue_nav  li:hover, input.button:hover {
+	background: -moz-linear-gradient(top, #bbb, #aaa);
+	background: -ms-linear-gradient(top, #bbb, #aaa);
+	background: -o-linear-gradient(top, #bbb, #aaa);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#bbb), to(#aaa));
+	background: -webkit-linear-gradient(top, #bbb, #aaa);
+	background: linear-gradient(top, #bbb, #aaa);
+}
+
+#issue_nav {
+	font-size: 0.8em;
+	max-height: 55px;
+	display: block;
+	overflow: auto;
+}
+
+#fmsg {
+	font-size: 0.4em;
+	padding-left: 50px;
+}
+
+#zine_zone {
+	float:left;
+	width: 754px;
+}
+
+#page_search  {
+	width: 140px;
+}
+
+#pages_zone {
+	float: right;
+	clear: right;
+	width: 222px;
+	height: 600px;
+	overflow: auto;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+}
+
+#pages_zone img {
+	float: left;
+	padding: 0;
+	margin: 2px;
+	border: 1px solid #888;
+	cursor: grab;
+    z-index: 10;
+}
+
+#thumb_bg {
+    display: block;
+    text-align: center;
+    background-color: grey;
+    padding: 5px;
+    color: white;}
+
+#thumb_bg a:hover {
+    color: white;}
+
+#zmwin {
+	z-index: 3;
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	text-align: center;
+	padding-top: 200px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#imghld {
+	background-color: white;
+	width: 300px;
+	margin: 0 auto;
+}
+
+#pinfo img {
+	float: right;
+}
+
+/** Tag Sytling **/
+
+h2 {
+	margin: 10px 0 3px 0;
+}
+
+label {
+	display: block;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+input.button {
+	float: none;
+}
+
+input.button:hover {
+	background: -moz-linear-gradient(top , #bbb, #aaa) repeat scroll 0 0 transparent;
+}
+
+p {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+/** Sytling **/
+
+.zipa {
+	width: 96px;
+	height: 140px;
+	float: left;
+	color: #ccc;
+	border: 2px solid #ccc;
+	text-align: center;
+	font-size: 1.3em;
+	margin: 3px;
+	position: relative;
+}
+
+.zipa img {
+	cursor: grab;
+}
+
+.zipa span {
+	z-index:2;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.fnotef, .fnotes {
+	padding: 5px;
+	background: #faa;
+	border: 1px solid #f88;
+	width: 150px;
+}
+
+.fnotes {
+	background: #9c9;
+	border: 1px solid #7a7;
+}
+
+.error {
+	border: 1px solid #faa;
+	background-color: #fcc;
+	padding: 3px;
+}
+
+.hint {
+	color: #999;
+	font-size: 0.7em;
+}
+
+.fl {
+	float: left;
+}
+	
+.fr {
+	float: right;
+}

@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Hang editorial access:"
+# CHANGE THE LINE BELOW TO THE CORRECT PATH
+AuthUserFile /home/username/public_html/zine/ed/.editorsp
+Require user editor
